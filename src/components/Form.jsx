@@ -64,7 +64,7 @@ const Form = ({ mode, selectedData, onSubmit, onCancel }) => {
   const totalVacancy = formData.vacancy.reduce((acc, val) => acc + val, 0);
 
   return (
-    <form onSubmit={handleSubmit} className="p-4 pt-0 bg-slate-700">
+    <form onSubmit={handleSubmit} className="w-full text-xs p-4 pt-0 bg-slate-700">
       <div className="grid grid-flow-col grid-rows-8 gap-1 max-sm:grid-rows-16">
         <label htmlFor="nom" className='m-0 p-0 mr-2 mt-3'>Nom</label>
         <input type="text" name="nom" placeholder="Nom" value={formData.nom} onChange={handleChange} className="p-2 border rounded m-0 mr-4  " />   
